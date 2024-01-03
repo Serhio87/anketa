@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>АНКЕТА</title>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+  <form action="">
+    <table border="1"cellpadding="5">
+      <caption  align="left">
+        <b>Анкета Пациента<br>О качестве оказанных услуг</b>
+      </caption>
+      <tr>
+        <td>Фамилия</td>
+        <td><input type="text" name="Familia" ></td>
+      </tr>
+      <tr>
+        <td>Имя<em id="zvezd">*</em></td>
+        <td><input type="text" name="Name" required></td>
+      </tr>
+      <tr>
+        <td>Отчество<em id="zvezd">*</em></td>
+        <td><input type="text" name="Otch" required></td>
+      </tr>
+      <tr>
+        <td>E-mail<em id="zvezd">*</em></td>
+        <td><input type="text" name="E-mail" required></td>
+      </tr>
+        <tr>
+        <td>Пол<em id="zvezd">*</em></td>
+        <td>
+          <input type="radio" name="gender" id="g1" value="1" required>
+          <lable for="g1">Мужчина</lable>
+          <input type="radio" name="gender" id="g2" value="2">
+          <lable for="g2">Женщина</lable>
+        </td>
+      </tr>
+      <tr>
+        <td>Полных лет</td>
+        <td><input type="number" min="18" max="90" ></td>
+              </tr>
+      <tr>
+        <td>К какому специалисту<br> обращались?</td>
+        <td>
+          <input type="checkbox" name="languadg" value="ter" checked>Терапевт<br>
+          <input type="checkbox" name="languadg" value="oku">Окулист<br>
+          <input type="checkbox" name="languadg" value="lor">Оториноларинголог<br>
+          <input type="checkbox" name="languadg" value="travm">Травматолог<br>
+          <input type="checkbox" name="languadg" value="pat">Патологоанатом<br>
+        </td>
+      </tr>
+        <td>Когда Вы это сделали?</td>
+        <td><input type="datetime-local" атрибуты></td>
+      
+      <tr>
+        <td>Оцените качество <br>оказанных услуг:</td>
+        <td>
+            <input type="range" min="0" max="10" step="1" value="5">
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <textarea name="description" cols="40" rows="10">Здесь Вы можете пожаловаться или похвалить нас...</textarea>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <input type="submit" value="Отправить">
+          <button type="reset"><a class="seven" href="EKZ.html">Вернуться</a></button> <br>
+          <em id="zvezd">* - заполнять обязательно!</em>
+        </td>
+      </tr>
+    </table>
+  </form>
+  </body>
+</html>
